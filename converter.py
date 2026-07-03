@@ -352,7 +352,12 @@ def extract_problems(encounters):
 
 
 def extract_medications(encounters):
-    rx = re.compile(r"^(?P<med>.+?)\s*\(\s*(?P<sig>.+?)\s*\)(?:\s*Filled\s*(?P<date>\d{4}-\d{2}-\d{2}))?\s*$")
+    # A trailing "- <note>" may follow the sig (and the optional Filled date),
+    # e.g. "... ( 1 by mouth daily ) - Pt buys OTC"; capture it instead of
+    # letting the whole line fail to match and silently drop the medication.
+    rx = re.compile(r"^(?P<med>.+?)\s*\(\s*(?P<sig>.+?)\s*\)"
+                    r"(?:\s*Filled\s*(?P<date>\d{4}-\d{2}-\d{2}))?"
+                    r"\s*(?:[-–]\s*(?P<note>\S.*?))?\s*$")
     meds = {}
     for enc in encounters:
         for val in enc.get("RX"):
@@ -360,10 +365,13 @@ def extract_medications(encounters):
             if not m:
                 continue
             name = re.sub(r"\s+", " ", m.group("med").strip())
+            sig = m.group("sig").strip()
+            if m.group("note"):
+                sig = f"{sig} - {m.group('note').strip()}"
             date = parse_date(m.group("date")) or enc.date
             key = name.lower()
             if key not in meds or (date and meds[key]["date"] and date > meds[key]["date"]):
-                meds[key] = {"name": name, "sig": m.group("sig").strip(), "date": date}
+                meds[key] = {"name": name, "sig": sig, "date": date}
     return list(meds.values())
 
 
@@ -425,7 +433,10 @@ def extract_immunizations(encounters):
                 date = parse_date(lines[i + 1])
                 lot = None
                 for look in lines[i + 2:i + 6]:
-                    lm = re.match(r"^([0-9A-Z]{5,})$", look)
+                    # Lot numbers are alphanumeric and contain at least one digit
+                    # (may include lowercase, e.g. "AC52b046BA"); the digit rule
+                    # keeps route/manufacturer words like "Intramuscular" out.
+                    lm = re.match(r"^(?=.*\d)([0-9A-Za-z]{5,})$", look)
                     if lm:
                         lot = lm.group(1)
                         break
