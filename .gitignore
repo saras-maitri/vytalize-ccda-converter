@@ -1,11 +1,24 @@
-.omc 
+.omc
 
 .venv
 
 __pycache__
 
-emr_ABILENE_2026-04-22-110615.txt
+# Local PHI / EMR inputs — NEVER commit patient data
+emr_*.txt
+ccda_in/
+ccda_in_abilene/
 
+# Generated C-CDA output (may contain PHI)
 output
-
 viewable-output
+ccda_out/
+ccda_out_OLD/
+ccda_out_qa/
+*.none
+
+# Scratch / QA scaffolding (keep test_fixes.py tracked)
+qa_*.py
+converter_old.py
+_prbody.md
+_commitmsg.txt
