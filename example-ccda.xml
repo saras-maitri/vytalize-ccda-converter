@@ -1,0 +1,1349 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ClinicalDocument xmlns="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdtc="urn:hl7-org:sdtc">
+  <realmCode code="US"/>
+  <typeId root="2.16.840.1.113883.1.3" extension="POCD_HD000040"/>
+  <templateId root="2.16.840.1.113883.10.20.22.1.1"/>
+  <templateId root="2.16.840.1.113883.10.20.22.1.2" extension="2015-08-01"/>
+  <id root="4515b07c-3ced-4f7f-a825-03fa368b74e5"/>
+  <code code="34133-9" displayName="Summarization of Episode Note" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+  <title>Continuity of Care Document</title>
+  <effectiveTime value="20260424115932"/>
+  <confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25"/>
+  <languageCode code="en-US"/>
+  <setId root="fdbdbe05-1afd-449d-a98a-2c347c5ad5c6"/>
+  <versionNumber value="1"/>
+  <recordTarget>
+    <patientRole>
+      <id extension="9999-915135" root="2.16.840.1.113883.4.1"/>
+      <addr use="HP">
+        <streetAddressLine>57915 Road</streetAddressLine>
+        <city>ROBERTBOROUGH</city>
+        <state>TX</state>
+        <postalCode>57669</postalCode>
+        <country>US</country>
+      </addr>
+      <telecom use="home" value="1312027"/>
+      <telecom use="home" value="00186281"/>
+      <telecom use="HP" value="chelsea.test@example.com"/>
+      <patient>
+        <name use="L">
+          <given>Chelsea</given>
+          <given>J</given>
+          <family>Test</family>
+        </name>
+        <administrativeGenderCode code="F" codeSystem="2.16.840.1.113883.5.1"/>
+        <birthTime value="19740904"/>
+      </patient>
+    </patientRole>
+  </recordTarget>
+  <author>
+    <time value="20260424115932"/>
+    <assignedAuthor>
+      <id root="2.16.840.1.113883.4.6" nullFlavor="NA"/>
+      <assignedAuthoringDevice>
+        <manufacturerModelName>EClat Health Platform</manufacturerModelName>
+        <softwareName>C-CDA Document Generator</softwareName>
+      </assignedAuthoringDevice>
+    </assignedAuthor>
+  </author>
+  <custodian>
+    <assignedCustodian>
+      <representedCustodianOrganization>
+        <id root="2.16.840.1.113883.4.6" nullFlavor="NA"/>
+        <name>Healthcare Organization</name>
+      </representedCustodianOrganization>
+    </assignedCustodian>
+  </custodian>
+  <component>
+    <structuredBody>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.22.2.22"/>
+          <templateId root="2.16.840.1.113883.10.20.22.2.22.1" extension="2015-08-01"/>
+          <code code="46240-8" displayName="Encounters" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+          <title>Encounters</title>
+          <text>
+            <table border="1" width="100%">
+              <thead>
+                <tr>
+                  <th>Date</th>
+                  <th>Type</th>
+                  <th>Provider</th>
+                  <th>Location</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr ID="encounter0">
+                  <td>2025-04-17</td>
+                  <td>Clinic</td>
+                  <td>Performed by: Dr. Bob</td>
+                  <td>Office</td>
+                </tr>
+              </tbody>
+            </table>
+          </text>
+          <entry typeCode="DRIV">
+            <encounter classCode="ENC" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.49" extension="2015-08-01"/>
+              <id root="9999-7558820"/>
+              <code nullFlavor="UNK"/>
+              <effectiveTime>
+                <low value="2025-04-17"/>
+                <high nullFlavor="UNK"/>
+              </effectiveTime>
+            </encounter>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.22.2.58" extension="2015-08-01"/>
+          <templateId root="2.16.840.1.113883.10.20.22.2.58"/>
+          <code code="75310-3" displayName="Health concerns Doc" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+          <title>Health Concerns</title>
+          <text>
+            <table>
+              <caption>Health Status</caption>
+              <colgroup>
+                <col width="40%"/>
+                <col width="20%"/>
+                <col width="40%"/>
+              </colgroup>
+              <tbody>
+                <tr ID="_health-status-row">
+                  <td>
+                    <content ID="_health-status-content">Chronically ill</content>
+                  </td>
+                  <td>
+                    <content styleCode="xSecondary">Since 2025-04-17</content>
+                  </td>
+                  <td/>
+                </tr>
+              </tbody>
+            </table>
+            <table>
+              <caption>Health Concerns</caption>
+              <colgroup>
+                <col width="40%"/>
+                <col width="20%"/>
+                <col width="40%"/>
+              </colgroup>
+              <tbody styleCode="xRowGroup" ID="_concern0-group">
+                <tr>
+                  <td>
+                    <content> </content>
+                    <content ID="_HealthConcern0">Calculus of kidney</content>
+                  </td>
+                  <td>
+                    <content styleCode="xLabel">Start: </content>
+                    <content>2025-04-17</content>
+                    <br/>
+                  </td>
+                  <td>
+                    <content styleCode="xLabel">Status: </content>
+                    <content>active</content>
+                    <br/>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="3">
+                    <content styleCode="Italics">Related To: </content>
+                  </td>
+                </tr>
+                <tr ID="_ProblemObs0">
+                  <td>
+                    <content styleCode="xIndent"> •</content>
+                    <content ID="ProblemObs0" styleCode="xSecondary xContentWrapping">N20.0 - Calculus of kidney</content>
+                  </td>
+                  <td> </td>
+                  <td>
+                    <content styleCode="xLabel xSecondary">Status: </content>
+                    <content styleCode="xSecondary">active</content>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </text>
+          <entry typeCode="DRIV">
+            <act classCode="ACT" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.132" extension="2022-06-01"/>
+              <templateId root="2.16.840.1.113883.10.20.22.4.132" extension="2015-08-01"/>
+              <templateId root="2.16.840.1.113883.10.20.22.4.132"/>
+              <id root="concern-9999-7558820-N20.0"/>
+              <code code="CONC" codeSystem="2.16.840.1.113883.5.6"/>
+              <statusCode code="active"/>
+              <effectiveTime>
+                <low value="2025-04-17"/>
+              </effectiveTime>
+              <entryRelationship typeCode="SUBJ">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.4" extension="2014-06-09"/>
+                  <id root="9999-7558820-N20.0"/>
+                  <code code="55607006" displayName="Problem" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime>
+                    <low value="2025-04-17"/>
+                  </effectiveTime>
+                  <value code="N20.0" displayName="Calculus of kidney" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD-10-CM" xsi:type="CD"/>
+                </observation>
+              </entryRelationship>
+            </act>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.22.2.40"/>
+          <code code="46298-9" displayName="External documents" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+          <title>EXTERNAL DOCUMENTS</title>
+          <text>
+            <table border="1" width="100%">
+              <thead>
+                <tr>
+                  <th>Description</th>
+                  <th>Date</th>
+                  <th>Status</th>
+                  <th>Provider</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr ID="document0">
+                  <td>Patient questionnaire submission   --------------------------------   Your response has been received.  ; Patient questionnaire submission   --------------------------------   Your response has been received.  ; Patient questionnaire submission   --------------------------------   Your response has been received.  ; Patient questionnaire submission   --------------------------------   Your response has been received.  ; Patient questionnaire submission   --------------------------------   Your response has been received.  ; Patient questionnaire submission   --------------------------------   Your response has been received.  ; Patient questionnaire submission   --------------------------------   Your response has been received.  ; Patient questionnaire submission   --------------------------------   Your response has been received.  ; Patient questionnaire submission   --------------------------------   Your response has been received.  ; Patient questionnaire submission   --------------------------------   Your response has been received.  ; Patient questionnaire submission   --------------------------------   Your response has been received.  ; Patient questionnaire submission   --------------------------------   Your response has been received.  ; Patient questionnaire submission   --------------------------------   Your response has been received.  ; Patient questionnaire submission   --------------------------------   Your response has been received.  ; Patient questionnaire submission   --------------------------------   Your response has been received.  ; Patient questionnaire submission   --------------------------------   Your response has been received.  ; Patient questionnaire submission   --------------------------------   Your response has been received.  ; Patient questionnaire submission   --------------------------------   Your response has been received.  ; Patient questionnaire submission   --------------------------------   Your response has been received.  ; Patient questionnaire submission   --------------------------------   Your response has been received.  ; Patient questionnaire submission   --------------------------------   Your response has been received.  ; Patient questionnaire submission   --------------------------------   Your response has been received.  ; Patient questionnaire submission   --------------------------------   Your response has been received.  ; Patient questionnaire submission   --------------------------------   Your response has been received.  ; Patient questionnaire submission   --------------------------------   Your response has been received.  ; Patient questionnaire submission   --------------------------------   Your response has been received.  ; Patient questionnaire submission   --------------------------------   Your response has been received.  ; Patient questionnaire submission   --------------------------------   Your response has been received.  ; Patient questionnaire submission   --------------------------------   Your response has been received.  ; Patient questionnaire submission   --------------------------------   Your response has been received.  ; Patient questionnaire submission   --------------------------------   Your response has been received.  ; Patient questionnaire submission   --------------------------------   Your response has been received.  ; Patient questionnaire submission   --------------------------------   Your response has been received.  ; Patient questionnaire submission   --------------------------------   Your response has been received.  ; Patient questionnaire submission   --------------------------------   Your response has been received.  ; Patient questionnaire submission   --------------------------------   Your response has been received.  </td>
+                  <td>2025-04-17</td>
+                  <td>Current</td>
+                  <td>Electronically signed by: RenderingProviderNPI</td>
+                </tr>
+              </tbody>
+            </table>
+          </text>
+          <entry typeCode="DRIV">
+            <externalDocument classCode="DOC" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.115" extension="2014-06-09"/>
+              <id root="9999-7558820-1001"/>
+              <code nullFlavor="UNK"/>
+              <title>Patient questionnaire submission   --------------------------------   Your response has been received.  ; Patient questionnaire submission   --------------------------------   Your response has been received.  ; Patient questionnaire submission   --------------------------------   Your response has been received.  ; Patient questionnaire submission   --------------------------------   Your response has been received.  ; Patient questionnaire submission   --------------------------------   Your response has been received.  ; Patient questionnaire submission   --------------------------------   Your response has been received.  ; Patient questionnaire submission   --------------------------------   Your response has been received.  ; Patient questionnaire submission   --------------------------------   Your response has been received.  ; Patient questionnaire submission   --------------------------------   Your response has been received.  ; Patient questionnaire submission   --------------------------------   Your response has been received.  ; Patient questionnaire submission   --------------------------------   Your response has been received.  ; Patient questionnaire submission   --------------------------------   Your response has been received.  ; Patient questionnaire submission   --------------------------------   Your response has been received.  ; Patient questionnaire submission   --------------------------------   Your response has been received.  ; Patient questionnaire submission   --------------------------------   Your response has been received.  ; Patient questionnaire submission   --------------------------------   Your response has been received.  ; Patient questionnaire submission   --------------------------------   Your response has been received.  ; Patient questionnaire submission   --------------------------------   Your response has been received.  ; Patient questionnaire submission   --------------------------------   Your response has been received.  ; Patient questionnaire submission   --------------------------------   Your response has been received.  ; Patient questionnaire submission   --------------------------------   Your response has been received.  ; Patient questionnaire submission   --------------------------------   Your response has been received.  ; Patient questionnaire submission   --------------------------------   Your response has been received.  ; Patient questionnaire submission   --------------------------------   Your response has been received.  ; Patient questionnaire submission   --------------------------------   Your response has been received.  ; Patient questionnaire submission   --------------------------------   Your response has been received.  ; Patient questionnaire submission   --------------------------------   Your response has been received.  ; Patient questionnaire submission   --------------------------------   Your response has been received.  ; Patient questionnaire submission   --------------------------------   Your response has been received.  ; Patient questionnaire submission   --------------------------------   Your response has been received.  ; Patient questionnaire submission   --------------------------------   Your response has been received.  ; Patient questionnaire submission   --------------------------------   Your response has been received.  ; Patient questionnaire submission   --------------------------------   Your response has been received.  ; Patient questionnaire submission   --------------------------------   Your response has been received.  ; Patient questionnaire submission   --------------------------------   Your response has been received.  ; Patient questionnaire submission   --------------------------------   Your response has been received.  </title>
+              <effectiveTime value="2025-04-17"/>
+              <text mediaType="text/plain"/>
+            </externalDocument>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.22.2.18" extension="2015-08-01"/>
+          <code code="48768-6" displayName="Payers" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+          <title>INSURANCE PROVIDERS</title>
+          <text>
+            <table border="1" width="100%">
+              <thead>
+                <tr>
+                  <th>Priority</th>
+                  <th>Insurance Company</th>
+                  <th>Plan Name</th>
+                  <th>Member ID</th>
+                  <th>Coverage Period</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr ID="coverage0">
+                  <td>Primary</td>
+                  <td>MEDICARE</td>
+                  <td>MCR Medicare</td>
+                  <td>RH111111111</td>
+                  <td>2017-02-01 to Present</td>
+                  <td>Inactive</td>
+                </tr>
+                <tr ID="coverage1">
+                  <td>Secondary</td>
+                  <td>BLUE CROSS</td>
+                  <td>Blue Cross</td>
+                  <td>VN1111111111</td>
+                  <td>2017-02-01 to Present</td>
+                  <td>Inactive</td>
+                </tr>
+              </tbody>
+            </table>
+          </text>
+          <entry typeCode="DRIV">
+            <act classCode="ACT" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.60" extension="2015-08-01"/>
+              <id root="9999-915135-RH111111111-1002"/>
+              <code code="48768-6" displayName="Payers" codeSystem="2.16.840.1.113883.6.1"/>
+              <statusCode code="cancelled"/>
+              <effectiveTime>
+                <low value="2017-02-01"/>
+              </effectiveTime>
+              <entryRelationship typeCode="COMP">
+                <observation classCode="OBS" moodCode="EVN">
+                  <id root="RH111111111"/>
+                  <code code="SUBSC" displayName="Subscriber" codeSystem="2.16.840.1.113883.5.4"/>
+                  <performer>
+                    <assignedEntity>
+                      <id extension="NIIP" root="2.16.840.1.113883.3.221.5"/>
+                      <representedOrganization>
+                        <name>MEDICARE</name>
+                        <name>MCR Medicare</name>
+                      </representedOrganization>
+                    </assignedEntity>
+                  </performer>
+                </observation>
+              </entryRelationship>
+            </act>
+          </entry>
+          <entry typeCode="DRIV">
+            <act classCode="ACT" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.60" extension="2015-08-01"/>
+              <id root="9999-915135-VN1111111111-1001"/>
+              <code code="48768-6" displayName="Payers" codeSystem="2.16.840.1.113883.6.1"/>
+              <statusCode code="cancelled"/>
+              <effectiveTime>
+                <low value="2017-02-01"/>
+              </effectiveTime>
+              <entryRelationship typeCode="COMP">
+                <observation classCode="OBS" moodCode="EVN">
+                  <id root="VN1111111111"/>
+                  <code code="SUBSC" displayName="Subscriber" codeSystem="2.16.840.1.113883.5.4"/>
+                  <performer>
+                    <assignedEntity>
+                      <id extension="NIIP" root="2.16.840.1.113883.3.221.5"/>
+                      <representedOrganization>
+                        <name>BLUE CROSS</name>
+                        <name>Blue Cross</name>
+                      </representedOrganization>
+                    </assignedEntity>
+                  </performer>
+                </observation>
+              </entryRelationship>
+            </act>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.22.2.2" extension="2015-08-01"/>
+          <code code="11369-6" displayName="History of Immunizations" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+          <title>IMMUNIZATIONS</title>
+          <text>
+            <table border="1" width="100%">
+              <thead>
+                <tr>
+                  <th>Vaccine</th>
+                  <th>Date</th>
+                  <th>Status</th>
+                  <th>Lot Number</th>
+                  <th>Route / Site</th>
+                  <th>Performer</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr ID="immunization0">
+                  <td>tetanus/diphth/pertuss (Tdap) adult/adol</td>
+                  <td>2025-04-17</td>
+                  <td>Completed</td>
+                  <td>U8389AA</td>
+                  <td>Intramuscular</td>
+                  <td>Performed by: Test MD, Olatunde Ibiyemi</td>
+                </tr>
+                <tr ID="immunization1">
+                  <td>meningococcal conjugate vaccine</td>
+                  <td>2025-04-17</td>
+                  <td>Completed</td>
+                  <td>U8438AA</td>
+                  <td>Intramuscular</td>
+                  <td>Performed by: Test MD, Nishat F</td>
+                </tr>
+              </tbody>
+            </table>
+          </text>
+          <entry typeCode="DRIV">
+            <substanceAdministration classCode="SBADM" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.52" extension="2015-08-01"/>
+              <id root="9999-915135-9257431420"/>
+              <statusCode code="completed"/>
+              <effectiveTime value="2025-04-17"/>
+              <routeCode code="" displayName="Intramuscular" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+              <doseQuantity value="0.5" unit=""/>
+              <consumable>
+                <manufacturedProduct classCode="MANU">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.54" extension="2014-06-09"/>
+                  <manufacturedMaterial>
+                    <code code="115" displayName="tetanus/diphth/pertuss (Tdap) adult/adol" codeSystem="2.16.840.1.113883.12.292" codeSystemName="CVX"/>
+                    <lotNumberText>U8389AA</lotNumberText>
+                  </manufacturedMaterial>
+                </manufacturedProduct>
+              </consumable>
+              <performer>
+                <assignedEntity>
+                  <id root="2.16.840.1.113883.4.6" extension="1811550486"/>
+                  <assignedPerson>
+                    <name>
+                      <family>Test MD, Olatunde Ibiyemi</family>
+                    </name>
+                  </assignedPerson>
+                </assignedEntity>
+              </performer>
+              <performer>
+                <assignedEntity>
+                  <id nullFlavor="UNK"/>
+                  <assignedPerson>
+                    <name>
+                      <family>Test RN, Sergio</family>
+                    </name>
+                  </assignedPerson>
+                </assignedEntity>
+              </performer>
+            </substanceAdministration>
+          </entry>
+          <entry typeCode="DRIV">
+            <substanceAdministration classCode="SBADM" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.52" extension="2015-08-01"/>
+              <id root="9999-915135-9258883081"/>
+              <statusCode code="completed"/>
+              <effectiveTime value="2025-04-17"/>
+              <routeCode code="" displayName="Intramuscular" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+              <doseQuantity value="0.5" unit=""/>
+              <consumable>
+                <manufacturedProduct classCode="MANU">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.54" extension="2014-06-09"/>
+                  <manufacturedMaterial>
+                    <code code="203" displayName="meningococcal conjugate vaccine" codeSystem="2.16.840.1.113883.12.292" codeSystemName="CVX"/>
+                    <lotNumberText>U8438AA</lotNumberText>
+                  </manufacturedMaterial>
+                </manufacturedProduct>
+              </consumable>
+              <performer>
+                <assignedEntity>
+                  <id root="2.16.840.1.113883.4.6" extension="1699934893"/>
+                  <assignedPerson>
+                    <name>
+                      <family>Test MD, Nishat F</family>
+                    </name>
+                  </assignedPerson>
+                </assignedEntity>
+              </performer>
+              <performer>
+                <assignedEntity>
+                  <id nullFlavor="UNK"/>
+                  <assignedPerson>
+                    <name>
+                      <family>Test CMA, Alexi</family>
+                    </name>
+                  </assignedPerson>
+                </assignedEntity>
+              </performer>
+            </substanceAdministration>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.22.2.4.1" extension="2015-08-01"/>
+          <code code="8716-3" displayName="Vital Signs" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+          <title>VITAL SIGNS</title>
+          <text>
+            <table border="1" width="100%">
+              <thead>
+                <tr>
+                  <th>Vital Sign</th>
+                  <th>Value</th>
+                  <th>Unit</th>
+                  <th>Date</th>
+                  <th>Interpretation</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr ID="vital0">
+                  <td>Body Mass Index</td>
+                  <td>29.1</td>
+                  <td>kg/m2</td>
+                  <td>2025-04-17</td>
+                  <td>Normal</td>
+                </tr>
+                <tr ID="vital1">
+                  <td>A/G Ratio</td>
+                  <td>1.5</td>
+                  <td>ratio</td>
+                  <td>2025-04-17</td>
+                  <td>Normal</td>
+                </tr>
+                <tr ID="vital2">
+                  <td>ALT</td>
+                  <td>26</td>
+                  <td>IntlUnit/L</td>
+                  <td>2025-04-17</td>
+                  <td>Normal</td>
+                </tr>
+                <tr ID="vital3">
+                  <td>AST</td>
+                  <td>31</td>
+                  <td>IntlUnit/L</td>
+                  <td>2025-04-17</td>
+                  <td>Normal</td>
+                </tr>
+                <tr ID="vital4">
+                  <td>Albumin Level</td>
+                  <td>3.8</td>
+                  <td>g/dL</td>
+                  <td>2025-04-17</td>
+                  <td>Normal</td>
+                </tr>
+                <tr ID="vital5">
+                  <td>Alk Phos</td>
+                  <td>114</td>
+                  <td>IntlUnit/L</td>
+                  <td>2025-04-17</td>
+                  <td>Normal</td>
+                </tr>
+                <tr ID="vital6">
+                  <td>Anion Gap</td>
+                  <td>6</td>
+                  <td>-</td>
+                  <td>2025-04-17</td>
+                  <td>Normal</td>
+                </tr>
+                <tr ID="vital7">
+                  <td>BUN</td>
+                  <td>11</td>
+                  <td>mg/dL</td>
+                  <td>2025-04-17</td>
+                  <td>Normal</td>
+                </tr>
+                <tr ID="vital8">
+                  <td>Bilirubin Total</td>
+                  <td>0.5</td>
+                  <td>mg/dL</td>
+                  <td>2025-04-17</td>
+                  <td>Normal</td>
+                </tr>
+                <tr ID="vital9">
+                  <td>CO2</td>
+                  <td>32</td>
+                  <td>mmol/L</td>
+                  <td>2025-04-17</td>
+                  <td>Normal</td>
+                </tr>
+                <tr ID="vital10">
+                  <td>Calcium Level</td>
+                  <td>9.5</td>
+                  <td>mg/dL</td>
+                  <td>2025-04-17</td>
+                  <td>Normal</td>
+                </tr>
+                <tr ID="vital11">
+                  <td>Chloride Level</td>
+                  <td>104</td>
+                  <td>mEq/L</td>
+                  <td>2025-04-17</td>
+                  <td>Normal</td>
+                </tr>
+                <tr ID="vital12">
+                  <td>Creatinine Level</td>
+                  <td>0.79</td>
+                  <td>mg/dL</td>
+                  <td>2025-04-17</td>
+                  <td>Normal</td>
+                </tr>
+                <tr ID="vital13">
+                  <td>Globulin</td>
+                  <td>2</td>
+                  <td>g/dL</td>
+                  <td>2025-04-17</td>
+                  <td>Normal</td>
+                </tr>
+                <tr ID="vital14">
+                  <td>Glucose Level</td>
+                  <td>94</td>
+                  <td>mg/dL</td>
+                  <td>2025-04-17</td>
+                  <td>Normal</td>
+                </tr>
+                <tr ID="vital15">
+                  <td>Potassium Level</td>
+                  <td>3.9</td>
+                  <td>mEq/L</td>
+                  <td>2025-04-17</td>
+                  <td>Normal</td>
+                </tr>
+                <tr ID="vital16">
+                  <td>Protein Total</td>
+                  <td>6.3</td>
+                  <td>g/dL</td>
+                  <td>2025-04-17</td>
+                  <td>Normal</td>
+                </tr>
+                <tr ID="vital17">
+                  <td>Sodium Level</td>
+                  <td>142</td>
+                  <td>mEq/L</td>
+                  <td>2025-04-17</td>
+                  <td>Normal</td>
+                </tr>
+                <tr ID="vital18">
+                  <td>eGFR AA</td>
+                  <td>86</td>
+                  <td>mL/min</td>
+                  <td>2025-04-17</td>
+                  <td>Normal</td>
+                </tr>
+                <tr ID="vital19">
+                  <td>eGFR Non-AA</td>
+                  <td>71</td>
+                  <td>mL/min</td>
+                  <td>2025-04-17</td>
+                  <td>Normal</td>
+                </tr>
+                <tr ID="vital20">
+                  <td>eGFR Non-AA</td>
+                  <td>71</td>
+                  <td>mL/min</td>
+                  <td>2025-04-17</td>
+                  <td>Normal</td>
+                </tr>
+                <tr ID="vital21">
+                  <td>Blood Pressure Diastolic</td>
+                  <td>88</td>
+                  <td>mm[Hg]</td>
+                  <td>2025-04-17</td>
+                  <td>Normal</td>
+                </tr>
+                <tr ID="vital22">
+                  <td>Blood Pressure Systolic</td>
+                  <td>124</td>
+                  <td>mm[Hg]</td>
+                  <td>2025-04-17</td>
+                  <td>Normal</td>
+                </tr>
+                <tr ID="vital23">
+                  <td>Pulse</td>
+                  <td>97</td>
+                  <td>/min</td>
+                  <td>2025-04-17</td>
+                  <td>Normal</td>
+                </tr>
+                <tr ID="vital24">
+                  <td>Respiration</td>
+                  <td>18</td>
+                  <td>/min</td>
+                  <td>2025-04-17</td>
+                  <td>Normal</td>
+                </tr>
+                <tr ID="vital25">
+                  <td>Oxygen Saturation</td>
+                  <td>97</td>
+                  <td>%</td>
+                  <td>2025-04-17</td>
+                  <td>Normal</td>
+                </tr>
+              </tbody>
+            </table>
+          </text>
+          <entry typeCode="DRIV">
+            <organizer classCode="CLUSTER" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.26" extension="2015-08-01"/>
+              <id root="9999-915135-39156-5-7558820"/>
+              <code code="46680005" displayName="Vital signs" codeSystem="2.16.840.1.113883.6.96"/>
+              <statusCode code="completed"/>
+              <effectiveTime value="2025-04-17"/>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
+                  <id root="9999-915135-39156-5-7558820-obs"/>
+                  <code code="39156-5" displayName="Body Mass Index" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                  <statusCode code="final"/>
+                  <effectiveTime value="2025-04-17"/>
+                  <value value="29.1" unit="kg/m2" xsi:type="PQ"/>
+                </observation>
+              </component>
+            </organizer>
+          </entry>
+          <entry typeCode="DRIV">
+            <organizer classCode="CLUSTER" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.26" extension="2015-08-01"/>
+              <id root="9999-915135-1759-0-1001"/>
+              <code code="46680005" displayName="Vital signs" codeSystem="2.16.840.1.113883.6.96"/>
+              <statusCode code="completed"/>
+              <effectiveTime value="2025-04-17"/>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
+                  <id root="9999-915135-1759-0-1001-obs"/>
+                  <code code="1759-0" displayName="A/G Ratio" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                  <statusCode code="final"/>
+                  <effectiveTime value="2025-04-17"/>
+                  <value value="1.5" unit="ratio" xsi:type="PQ"/>
+                </observation>
+              </component>
+            </organizer>
+          </entry>
+          <entry typeCode="DRIV">
+            <organizer classCode="CLUSTER" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.26" extension="2015-08-01"/>
+              <id root="9999-915135-1743-4-1002"/>
+              <code code="46680005" displayName="Vital signs" codeSystem="2.16.840.1.113883.6.96"/>
+              <statusCode code="completed"/>
+              <effectiveTime value="2025-04-17"/>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
+                  <id root="9999-915135-1743-4-1002-obs"/>
+                  <code code="1743-4" displayName="ALT" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                  <statusCode code="final"/>
+                  <effectiveTime value="2025-04-17"/>
+                  <value value="26" unit="IntlUnit/L" xsi:type="PQ"/>
+                </observation>
+              </component>
+            </organizer>
+          </entry>
+          <entry typeCode="DRIV">
+            <organizer classCode="CLUSTER" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.26" extension="2015-08-01"/>
+              <id root="9999-915135-16412-9-1003"/>
+              <code code="46680005" displayName="Vital signs" codeSystem="2.16.840.1.113883.6.96"/>
+              <statusCode code="completed"/>
+              <effectiveTime value="2025-04-17"/>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
+                  <id root="9999-915135-16412-9-1003-obs"/>
+                  <code code="16412-9" displayName="AST" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                  <statusCode code="final"/>
+                  <effectiveTime value="2025-04-17"/>
+                  <value value="31" unit="IntlUnit/L" xsi:type="PQ"/>
+                </observation>
+              </component>
+            </organizer>
+          </entry>
+          <entry typeCode="DRIV">
+            <organizer classCode="CLUSTER" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.26" extension="2015-08-01"/>
+              <id root="9999-915135-76631-1-1004"/>
+              <code code="46680005" displayName="Vital signs" codeSystem="2.16.840.1.113883.6.96"/>
+              <statusCode code="completed"/>
+              <effectiveTime value="2025-04-17"/>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
+                  <id root="9999-915135-76631-1-1004-obs"/>
+                  <code code="76631-1" displayName="Albumin Level" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                  <statusCode code="final"/>
+                  <effectiveTime value="2025-04-17"/>
+                  <value value="3.8" unit="g/dL" xsi:type="PQ"/>
+                </observation>
+              </component>
+            </organizer>
+          </entry>
+          <entry typeCode="DRIV">
+            <organizer classCode="CLUSTER" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.26" extension="2015-08-01"/>
+              <id root="9999-915135-1783-0-1005"/>
+              <code code="46680005" displayName="Vital signs" codeSystem="2.16.840.1.113883.6.96"/>
+              <statusCode code="completed"/>
+              <effectiveTime value="2025-04-17"/>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
+                  <id root="9999-915135-1783-0-1005-obs"/>
+                  <code code="1783-0" displayName="Alk Phos" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                  <statusCode code="final"/>
+                  <effectiveTime value="2025-04-17"/>
+                  <value value="114" unit="IntlUnit/L" xsi:type="PQ"/>
+                </observation>
+              </component>
+            </organizer>
+          </entry>
+          <entry typeCode="DRIV">
+            <organizer classCode="CLUSTER" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.26" extension="2015-08-01"/>
+              <id root="9999-915135-33037-3-1006"/>
+              <code code="46680005" displayName="Vital signs" codeSystem="2.16.840.1.113883.6.96"/>
+              <statusCode code="completed"/>
+              <effectiveTime value="2025-04-17"/>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
+                  <id root="9999-915135-33037-3-1006-obs"/>
+                  <code code="33037-3" displayName="Anion Gap" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                  <statusCode code="final"/>
+                  <effectiveTime value="2025-04-17"/>
+                  <value value="6" unit="-" xsi:type="PQ"/>
+                </observation>
+              </component>
+            </organizer>
+          </entry>
+          <entry typeCode="DRIV">
+            <organizer classCode="CLUSTER" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.26" extension="2015-08-01"/>
+              <id root="9999-915135-6299-2-1007"/>
+              <code code="46680005" displayName="Vital signs" codeSystem="2.16.840.1.113883.6.96"/>
+              <statusCode code="completed"/>
+              <effectiveTime value="2025-04-17"/>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
+                  <id root="9999-915135-6299-2-1007-obs"/>
+                  <code code="6299-2" displayName="BUN" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                  <statusCode code="final"/>
+                  <effectiveTime value="2025-04-17"/>
+                  <value value="11" unit="mg/dL" xsi:type="PQ"/>
+                </observation>
+              </component>
+            </organizer>
+          </entry>
+          <entry typeCode="DRIV">
+            <organizer classCode="CLUSTER" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.26" extension="2015-08-01"/>
+              <id root="9999-915135-42719-5-1008"/>
+              <code code="46680005" displayName="Vital signs" codeSystem="2.16.840.1.113883.6.96"/>
+              <statusCode code="completed"/>
+              <effectiveTime value="2025-04-17"/>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
+                  <id root="9999-915135-42719-5-1008-obs"/>
+                  <code code="42719-5" displayName="Bilirubin Total" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                  <statusCode code="final"/>
+                  <effectiveTime value="2025-04-17"/>
+                  <value value="0.5" unit="mg/dL" xsi:type="PQ"/>
+                </observation>
+              </component>
+            </organizer>
+          </entry>
+          <entry typeCode="DRIV">
+            <organizer classCode="CLUSTER" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.26" extension="2015-08-01"/>
+              <id root="9999-915135-20565-8-1009"/>
+              <code code="46680005" displayName="Vital signs" codeSystem="2.16.840.1.113883.6.96"/>
+              <statusCode code="completed"/>
+              <effectiveTime value="2025-04-17"/>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
+                  <id root="9999-915135-20565-8-1009-obs"/>
+                  <code code="20565-8" displayName="CO2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                  <statusCode code="final"/>
+                  <effectiveTime value="2025-04-17"/>
+                  <value value="32" unit="mmol/L" xsi:type="PQ"/>
+                </observation>
+              </component>
+            </organizer>
+          </entry>
+          <entry typeCode="DRIV">
+            <organizer classCode="CLUSTER" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.26" extension="2015-08-01"/>
+              <id root="9999-915135-49765-1-1010"/>
+              <code code="46680005" displayName="Vital signs" codeSystem="2.16.840.1.113883.6.96"/>
+              <statusCode code="completed"/>
+              <effectiveTime value="2025-04-17"/>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
+                  <id root="9999-915135-49765-1-1010-obs"/>
+                  <code code="49765-1" displayName="Calcium Level" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                  <statusCode code="final"/>
+                  <effectiveTime value="2025-04-17"/>
+                  <value value="9.5" unit="mg/dL" xsi:type="PQ"/>
+                </observation>
+              </component>
+            </organizer>
+          </entry>
+          <entry typeCode="DRIV">
+            <organizer classCode="CLUSTER" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.26" extension="2015-08-01"/>
+              <id root="9999-915135-2069-3-1011"/>
+              <code code="46680005" displayName="Vital signs" codeSystem="2.16.840.1.113883.6.96"/>
+              <statusCode code="completed"/>
+              <effectiveTime value="2025-04-17"/>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
+                  <id root="9999-915135-2069-3-1011-obs"/>
+                  <code code="2069-3" displayName="Chloride Level" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                  <statusCode code="final"/>
+                  <effectiveTime value="2025-04-17"/>
+                  <value value="104" unit="mEq/L" xsi:type="PQ"/>
+                </observation>
+              </component>
+            </organizer>
+          </entry>
+          <entry typeCode="DRIV">
+            <organizer classCode="CLUSTER" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.26" extension="2015-08-01"/>
+              <id root="9999-915135-38483-4-1012"/>
+              <code code="46680005" displayName="Vital signs" codeSystem="2.16.840.1.113883.6.96"/>
+              <statusCode code="completed"/>
+              <effectiveTime value="2025-04-17"/>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
+                  <id root="9999-915135-38483-4-1012-obs"/>
+                  <code code="38483-4" displayName="Creatinine Level" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                  <statusCode code="final"/>
+                  <effectiveTime value="2025-04-17"/>
+                  <value value="0.79" unit="mg/dL" xsi:type="PQ"/>
+                </observation>
+              </component>
+            </organizer>
+          </entry>
+          <entry typeCode="DRIV">
+            <organizer classCode="CLUSTER" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.26" extension="2015-08-01"/>
+              <id root="9999-915135-2871-2-1013"/>
+              <code code="46680005" displayName="Vital signs" codeSystem="2.16.840.1.113883.6.96"/>
+              <statusCode code="completed"/>
+              <effectiveTime value="2025-04-17"/>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
+                  <id root="9999-915135-2871-2-1013-obs"/>
+                  <code code="2871-2" displayName="Globulin" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                  <statusCode code="final"/>
+                  <effectiveTime value="2025-04-17"/>
+                  <value value="2" unit="g/dL" xsi:type="PQ"/>
+                </observation>
+              </component>
+            </organizer>
+          </entry>
+          <entry typeCode="DRIV">
+            <organizer classCode="CLUSTER" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.26" extension="2015-08-01"/>
+              <id root="9999-915135-1557-8-1014"/>
+              <code code="46680005" displayName="Vital signs" codeSystem="2.16.840.1.113883.6.96"/>
+              <statusCode code="completed"/>
+              <effectiveTime value="2025-04-17"/>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
+                  <id root="9999-915135-1557-8-1014-obs"/>
+                  <code code="1557-8" displayName="Glucose Level" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                  <statusCode code="final"/>
+                  <effectiveTime value="2025-04-17"/>
+                  <value value="94" unit="mg/dL" xsi:type="PQ"/>
+                </observation>
+              </component>
+            </organizer>
+          </entry>
+          <entry typeCode="DRIV">
+            <organizer classCode="CLUSTER" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.26" extension="2015-08-01"/>
+              <id root="9999-915135-75940-7-1015"/>
+              <code code="46680005" displayName="Vital signs" codeSystem="2.16.840.1.113883.6.96"/>
+              <statusCode code="completed"/>
+              <effectiveTime value="2025-04-17"/>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
+                  <id root="9999-915135-75940-7-1015-obs"/>
+                  <code code="75940-7" displayName="Potassium Level" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                  <statusCode code="final"/>
+                  <effectiveTime value="2025-04-17"/>
+                  <value value="3.9" unit="mEq/L" xsi:type="PQ"/>
+                </observation>
+              </component>
+            </organizer>
+          </entry>
+          <entry typeCode="DRIV">
+            <organizer classCode="CLUSTER" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.26" extension="2015-08-01"/>
+              <id root="9999-915135-2885-2-1016"/>
+              <code code="46680005" displayName="Vital signs" codeSystem="2.16.840.1.113883.6.96"/>
+              <statusCode code="completed"/>
+              <effectiveTime value="2025-04-17"/>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
+                  <id root="9999-915135-2885-2-1016-obs"/>
+                  <code code="2885-2" displayName="Protein Total" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                  <statusCode code="final"/>
+                  <effectiveTime value="2025-04-17"/>
+                  <value value="6.3" unit="g/dL" xsi:type="PQ"/>
+                </observation>
+              </component>
+            </organizer>
+          </entry>
+          <entry typeCode="DRIV">
+            <organizer classCode="CLUSTER" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.26" extension="2015-08-01"/>
+              <id root="9999-915135-2947-0-1017"/>
+              <code code="46680005" displayName="Vital signs" codeSystem="2.16.840.1.113883.6.96"/>
+              <statusCode code="completed"/>
+              <effectiveTime value="2025-04-17"/>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
+                  <id root="9999-915135-2947-0-1017-obs"/>
+                  <code code="2947-0" displayName="Sodium Level" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                  <statusCode code="final"/>
+                  <effectiveTime value="2025-04-17"/>
+                  <value value="142" unit="mEq/L" xsi:type="PQ"/>
+                </observation>
+              </component>
+            </organizer>
+          </entry>
+          <entry typeCode="DRIV">
+            <organizer classCode="CLUSTER" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.26" extension="2015-08-01"/>
+              <id root="9999-915135-48643-1-1018"/>
+              <code code="46680005" displayName="Vital signs" codeSystem="2.16.840.1.113883.6.96"/>
+              <statusCode code="completed"/>
+              <effectiveTime value="2025-04-17"/>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
+                  <id root="9999-915135-48643-1-1018-obs"/>
+                  <code code="48643-1" displayName="eGFR AA" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                  <statusCode code="final"/>
+                  <effectiveTime value="2025-04-17"/>
+                  <value value="86" unit="mL/min" xsi:type="PQ"/>
+                </observation>
+              </component>
+            </organizer>
+          </entry>
+          <entry typeCode="DRIV">
+            <organizer classCode="CLUSTER" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.26" extension="2015-08-01"/>
+              <id root="9999-915135-48642-3-1019"/>
+              <code code="46680005" displayName="Vital signs" codeSystem="2.16.840.1.113883.6.96"/>
+              <statusCode code="completed"/>
+              <effectiveTime value="2025-04-17"/>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
+                  <id root="9999-915135-48642-3-1019-obs"/>
+                  <code code="48642-3" displayName="eGFR Non-AA" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                  <statusCode code="final"/>
+                  <effectiveTime value="2025-04-17"/>
+                  <value value="71" unit="mL/min" xsi:type="PQ"/>
+                </observation>
+              </component>
+            </organizer>
+          </entry>
+          <entry typeCode="DRIV">
+            <organizer classCode="CLUSTER" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.26" extension="2015-08-01"/>
+              <id root="9999-915135-48643-1-1020"/>
+              <code code="46680005" displayName="Vital signs" codeSystem="2.16.840.1.113883.6.96"/>
+              <statusCode code="completed"/>
+              <effectiveTime value="2025-04-17"/>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
+                  <id root="9999-915135-48643-1-1020-obs"/>
+                  <code code="48643-1" displayName="eGFR Non-AA" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                  <statusCode code="final"/>
+                  <effectiveTime value="2025-04-17"/>
+                  <value value="71" unit="mL/min" xsi:type="PQ"/>
+                </observation>
+              </component>
+            </organizer>
+          </entry>
+          <entry typeCode="DRIV">
+            <organizer classCode="CLUSTER" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.26" extension="2015-08-01"/>
+              <id root="9999-915135-8462-4-7558820"/>
+              <code code="46680005" displayName="Vital signs" codeSystem="2.16.840.1.113883.6.96"/>
+              <statusCode code="completed"/>
+              <effectiveTime value="2025-04-17"/>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
+                  <id root="9999-915135-8462-4-7558820-obs"/>
+                  <code code="8462-4" displayName="Blood Pressure Diastolic" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                  <statusCode code="final"/>
+                  <effectiveTime value="2025-04-17"/>
+                  <value value="88" unit="mm[Hg]" xsi:type="PQ"/>
+                </observation>
+              </component>
+            </organizer>
+          </entry>
+          <entry typeCode="DRIV">
+            <organizer classCode="CLUSTER" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.26" extension="2015-08-01"/>
+              <id root="9999-915135-8480-6-7558820"/>
+              <code code="46680005" displayName="Vital signs" codeSystem="2.16.840.1.113883.6.96"/>
+              <statusCode code="completed"/>
+              <effectiveTime value="2025-04-17"/>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
+                  <id root="9999-915135-8480-6-7558820-obs"/>
+                  <code code="8480-6" displayName="Blood Pressure Systolic" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                  <statusCode code="final"/>
+                  <effectiveTime value="2025-04-17"/>
+                  <value value="124" unit="mm[Hg]" xsi:type="PQ"/>
+                </observation>
+              </component>
+            </organizer>
+          </entry>
+          <entry typeCode="DRIV">
+            <organizer classCode="CLUSTER" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.26" extension="2015-08-01"/>
+              <id root="9999-915135-8867-4-7558820"/>
+              <code code="46680005" displayName="Vital signs" codeSystem="2.16.840.1.113883.6.96"/>
+              <statusCode code="completed"/>
+              <effectiveTime value="2025-04-17"/>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
+                  <id root="9999-915135-8867-4-7558820-obs"/>
+                  <code code="8867-4" displayName="Pulse" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                  <statusCode code="final"/>
+                  <effectiveTime value="2025-04-17"/>
+                  <value value="97" unit="/min" xsi:type="PQ"/>
+                </observation>
+              </component>
+            </organizer>
+          </entry>
+          <entry typeCode="DRIV">
+            <organizer classCode="CLUSTER" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.26" extension="2015-08-01"/>
+              <id root="9999-915135-9279-1-7558820"/>
+              <code code="46680005" displayName="Vital signs" codeSystem="2.16.840.1.113883.6.96"/>
+              <statusCode code="completed"/>
+              <effectiveTime value="2025-04-17"/>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
+                  <id root="9999-915135-9279-1-7558820-obs"/>
+                  <code code="9279-1" displayName="Respiration" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                  <statusCode code="final"/>
+                  <effectiveTime value="2025-04-17"/>
+                  <value value="18" unit="/min" xsi:type="PQ"/>
+                </observation>
+              </component>
+            </organizer>
+          </entry>
+          <entry typeCode="DRIV">
+            <organizer classCode="CLUSTER" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.26" extension="2015-08-01"/>
+              <id root="9999-915135-2708-6-7558820"/>
+              <code code="46680005" displayName="Vital signs" codeSystem="2.16.840.1.113883.6.96"/>
+              <statusCode code="completed"/>
+              <effectiveTime value="2025-04-17"/>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
+                  <id root="9999-915135-2708-6-7558820-obs"/>
+                  <code code="2708-6" displayName="Oxygen Saturation" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                  <statusCode code="final"/>
+                  <effectiveTime value="2025-04-17"/>
+                  <value value="97" unit="%" xsi:type="PQ"/>
+                </observation>
+              </component>
+            </organizer>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.22.2.7.1" extension="2015-08-01"/>
+          <code code="47519-4" displayName="History of Procedures" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+          <title>Procedures</title>
+          <text>
+            <table border="1" width="100%">
+              <thead>
+                <tr>
+                  <th>Procedure</th>
+                  <th>Date</th>
+                  <th>Status</th>
+                  <th>Outcome</th>
+                  <th>Performer</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr ID="procedure0">
+                  <td>G0444 - Total Depression Screen Score</td>
+                  <td>2025-04-17</td>
+                  <td>Completed</td>
+                  <td>1</td>
+                  <td>Performed by: RenderingProviderNPI</td>
+                </tr>
+                <tr ID="procedure1">
+                  <td>99214 - Morse Fall Score</td>
+                  <td>2025-04-17</td>
+                  <td>Completed</td>
+                  <td>0</td>
+                  <td>Performed by: RenderingProviderNPI</td>
+                </tr>
+              </tbody>
+            </table>
+          </text>
+          <entry typeCode="DRIV">
+            <procedure classCode="PROC" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.14" extension="2014-06-09"/>
+              <id root="9999-7558820-G0444"/>
+              <code code="G0444" displayName="Total Depression Screen Score" codeSystem="2.16.840.1.113883.6.12" codeSystemName="CPT"/>
+              <statusCode code="completed"/>
+              <effectiveTime value="2025-04-17"/>
+              <performer>
+                <assignedEntity>
+                  <id root="2.16.840.1.113883.4.6" extension="1134798838"/>
+                  <assignedPerson>
+                    <name>
+                      <family>RenderingProviderNPI</family>
+                    </name>
+                  </assignedPerson>
+                </assignedEntity>
+              </performer>
+              <performer>
+                <assignedEntity>
+                  <id extension="9999"/>
+                  <assignedPerson>
+                    <name>
+                      <family>CHSourceID</family>
+                    </name>
+                  </assignedPerson>
+                </assignedEntity>
+              </performer>
+              <performer>
+                <assignedEntity>
+                  <id extension="Test CMA, Chanda"/>
+                  <assignedPerson>
+                    <name>
+                      <family>PerformedByClinician</family>
+                    </name>
+                  </assignedPerson>
+                </assignedEntity>
+              </performer>
+            </procedure>
+          </entry>
+          <entry typeCode="DRIV">
+            <procedure classCode="PROC" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.14" extension="2014-06-09"/>
+              <id root="9999-7558820-99214"/>
+              <code code="99214" displayName="Morse Fall Score" codeSystem="2.16.840.1.113883.6.12" codeSystemName="CPT"/>
+              <statusCode code="completed"/>
+              <effectiveTime value="2025-04-17"/>
+              <performer>
+                <assignedEntity>
+                  <id root="2.16.840.1.113883.4.6" extension="1235190687"/>
+                  <assignedPerson>
+                    <name>
+                      <family>RenderingProviderNPI</family>
+                    </name>
+                  </assignedPerson>
+                </assignedEntity>
+              </performer>
+              <performer>
+                <assignedEntity>
+                  <id extension="9999"/>
+                  <assignedPerson>
+                    <name>
+                      <family>CHSourceID</family>
+                    </name>
+                  </assignedPerson>
+                </assignedEntity>
+              </performer>
+              <performer>
+                <assignedEntity>
+                  <id extension="Test, Daphney"/>
+                  <assignedPerson>
+                    <name>
+                      <family>PerformedByClinician</family>
+                    </name>
+                  </assignedPerson>
+                </assignedEntity>
+              </performer>
+            </procedure>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.22.2.1.1" extension="2014-06-09"/>
+          <code code="10160-0" displayName="History of Medication Use" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+          <title>MEDICATIONS</title>
+          <text>
+            <table border="1" width="100%">
+              <thead>
+                <tr>
+                  <th>Medication</th>
+                  <th>Instructions</th>
+                  <th>Start Date</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr ID="medication0">
+                  <td>albuterol sulfate</td>
+                  <td>twice a day</td>
+                  <td>2025-04-17</td>
+                  <td>Unknown</td>
+                </tr>
+                <tr ID="medication1">
+                  <td>atorvastatin</td>
+                  <td>daily</td>
+                  <td>2025-04-17</td>
+                  <td>Unknown</td>
+                </tr>
+                <tr ID="medication2">
+                  <td>lisinopril</td>
+                  <td>daily</td>
+                  <td>2025-04-17</td>
+                  <td>Unknown</td>
+                </tr>
+              </tbody>
+            </table>
+          </text>
+          <entry typeCode="DRIV">
+            <substanceAdministration classCode="SBADM" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.16" extension="2014-06-09"/>
+              <id root="9999-915135-250311-152745189"/>
+              <statusCode code="active"/>
+              <effectiveTime xsi:type="IVL_TS">
+                <low value="2025-04-17"/>
+              </effectiveTime>
+              <doseQuantity value="2" unit=""/>
+              <consumable>
+                <manufacturedProduct classCode="MANU">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.23" extension="2014-06-09"/>
+                  <manufacturedMaterial>
+                    <code code="00093317431" displayName="albuterol sulfate" codeSystem="2.16.840.1.113883.6.69" codeSystemName="NDC"/>
+                  </manufacturedMaterial>
+                </manufacturedProduct>
+              </consumable>
+            </substanceAdministration>
+          </entry>
+          <entry typeCode="DRIV">
+            <substanceAdministration classCode="SBADM" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.16" extension="2014-06-09"/>
+              <id root="9999-915135-250303-152951352"/>
+              <statusCode code="active"/>
+              <effectiveTime xsi:type="IVL_TS">
+                <low value="2025-04-17"/>
+              </effectiveTime>
+              <doseQuantity value="40" unit=""/>
+              <consumable>
+                <manufacturedProduct classCode="MANU">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.23" extension="2014-06-09"/>
+                  <manufacturedMaterial>
+                    <code code="60505258009" displayName="atorvastatin" codeSystem="2.16.840.1.113883.6.69" codeSystemName="NDC"/>
+                  </manufacturedMaterial>
+                </manufacturedProduct>
+              </consumable>
+            </substanceAdministration>
+          </entry>
+          <entry typeCode="DRIV">
+            <substanceAdministration classCode="SBADM" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.16" extension="2014-06-09"/>
+              <id root="9999-915135-250303-152951367"/>
+              <statusCode code="active"/>
+              <effectiveTime xsi:type="IVL_TS">
+                <low value="2025-04-17"/>
+              </effectiveTime>
+              <doseQuantity value="20" unit=""/>
+              <consumable>
+                <manufacturedProduct classCode="MANU">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.23" extension="2014-06-09"/>
+                  <manufacturedMaterial>
+                    <code code="00591040801" displayName="lisinopril" codeSystem="2.16.840.1.113883.6.69" codeSystemName="NDC"/>
+                  </manufacturedMaterial>
+                </manufacturedProduct>
+              </consumable>
+            </substanceAdministration>
+          </entry>
+        </section>
+      </component>
+    </structuredBody>
+  </component>
+</ClinicalDocument>
